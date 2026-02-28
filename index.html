@@ -1,101 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homeYPK.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
-    <style>
-        h1 {
-            font-family: "Poppins", serif;
-            font-weight: 900;
-            color: azure;
-        }
-
-        h2 {
-            font-size: 20px;
-            font-family: "Poppins", serif;
-            font-weight: 500;
-            color: azure;
-        }
-
-        h4 {
-            font-size: 20px;
-            font-family: "Poppins", serif;
-            color: rgb(255, 255, 255);
-            font-weight: 100;
-        }
-
-        h3 {
-            font-size: 15px;
-            font-family: "Poppins", serif;
-            font-weight: 200;
-            color: rgb(255, 255, 255);
-        }
-
-        h5 {
-            font-size: 15px;
-            color: azure;
-            font-family: "Poppins", serif;
-            font-weight: 200;
-        }
-
-        a {
-            font-size: 25px;
-            color: azure;
-            font-family: "Poppins", serif;
-        }
-    </style>
     <title>Yayasan Pendidikan Kristen | Jatim</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Cinzel:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="homeYPK.css">
 </head>
 
 <body>
-    <div class="container">
-        <!--<header>
-            <h1 align="center"><img align="center"src="logoypk.png" alt="" width="3%" height="3%"><img align="center"src="nama3.png" alt="" height="17%" width="25%"></h1>
-        </header>-->
-        <div class="menu">
-            <nav>
-                <ul class="horizontal">
-                    <li><a href=""> </a></li>
-                    <h1 align="center"><img align="left" src="./YAYASAN/logoypk.png" alt="" width="4%" height="4%"><img
-                            align="left" src="./YAYASAN/TULISANSMP4.png" alt="" height="10%" width="30%"></h1>
-                    <li align="right"><h5 href="visimisi.html">Visi Misi</h5></li>
-                    <li align="right"><h5 href="prestasi.html">Prestasi</h5></li>
-                    <li align="right"><h5 href="fasilitas.html">Fasilitas</h5></li>
-                    <li align="right"><h5 href="kurikulum.html">Kurikulum</h5></li>
-                    <li align="right"><h5 href="guru.html">Guru Staff</h5></li>
-                    <li align="right"><h5 href="#">Kontak</h5></li>
-                    <li align="right"><h5 href="#">Layanan</h5></li>
-                </ul>
-            </nav>
+
+    <header>
+        <div class="logo-container">
+            <img src="../YAYASAN/logoypk.png" alt="Logo YPK">
+            <span>YPK JAWA TIMUR</span>
         </div>
-        <div class="gambar">
-            <div class="gambar3">
-            <img src="./YAYASAN/BOTTON SD.png" height="50%" width="100%">
-            <h4 align="center" class="sd"><a href="../SD/home.html">SD KR BRAWIJAYA 3</a></h4>
-            </div>
-            <div class="gambar2">
-            <img src="./YAYASAN/BOTTON SMP.png" height="50%" width="100%">
-            <h4 align="center" class="smp"><a href="../SMP/homeSmp.html">SMP 4 YPK</a></h4>
-            </div>
-            <div class="gambar1">
-                <h1 align="center" class="bgcolor1">Alamat Kami</h1>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3796.7260952960833!2d112.64530667500712!3d-7.992270692033344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd628724011c01d%3A0xc288a9d4c5d59a8a!2sSMP%204%20YPK%20JATIM%20MALANG!5e1!3m2!1sen!2sid!4v1740384513394!5m2!1sen!2sid"
-                    width="1353" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <h3 align="center" class="bgcolor1"><b>Alamat Yayasan</b> : JL. Ki Ageng Gribig 248 Kedungkandang kota
-                    Malang |
-                    <b>Telepon</b> :
-                    085768654338 | <b>Email</b> : sdkristenbrawijaya_3
-                </h3>
-            </div>
-            <footer>
-                <h3 align="center">@2025 | SD BRAWIJAYA 3 Kedungkandang | IG : sdkristenbrawijaya_3</h3>
-            </footer>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+
+        <nav>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="visimisi.html">Visi Misi</a></li>
+                <li><a href="prestasi.html">Prestasi</a></li>
+                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="kurikulum.html">Kurikulum</a></li>
+                <li><a href="guru.html">Guru Staff</a></li>
+                <li><a href="#" class="btn-contact">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-overlay" id="nav-overlay"></div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-text">
+                <span class="badge">Portal Utama</span>
+                <h1 class="main-title">Membangun Masa Depan <span>Bersama YPK</span></h1>
+                <p>Menaungi lembaga pendidikan Kristen yang berintegritas, inovatif, dan berkarakter di Jawa Timur.</p>
+                <div class="hero-action">
+                    <a href="#unit-pendidikan" class="btn-follow">Lihat Unit Pendidikan</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../YAYASAN/TULISANSMP4.png" alt="YPK Banner" class="banner-yayasan">
+            </div>
+        </section>
+
+        <section id="unit-pendidikan" class="units-section container">
+            <div class="section-title">
+                <h2>Unit Pendidikan Kami</h2>
+                <p>Silakan klik gambar atau tombol untuk mengunjungi website unit</p>
+            </div>
+
+            <div class="unit-grid">
+                <div class="unit-card card-sd">
+                    <a href="../SD/home.html" class="unit-image-link">
+                        <img src="../YAYASAN/BOTTON SD.png" alt="SD Brawijaya 3">
+                        <div class="image-overlay">Buka Web SD</div>
+                    </a>
+                    <div class="unit-info">
+                        <h3>SD KRISTEN BRAWIJAYA 3</h3>
+                        <a href="../SD/home.html" class="btn-visit">Kunjungi Web SD</a>
+                    </div>
+                </div>
+
+                <div class="unit-card card-smp">
+                    <a href="../SMP/homeSmp.html" class="unit-image-link">
+                        <img src="../YAYASAN/BOTTON SMP.png" alt="SMP 4 YPK">
+                        <div class="image-overlay">Buka Web SMP</div>
+                    </a>
+                    <div class="unit-info">
+                        <h3>SMP 4 YPK MALANG</h3>
+                        <a href="../SMP/homeSmp.html" class="btn-visit">Kunjungi Web SMP</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <div class="map-wrapper">
+                    <h2>Lokasi Strategis Kami</h2>
+                    <p style="text-align: center; color: white; margin-bottom: 20px;">Jl. Ki Ageng Gribig 248, Malang
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.103284799015!2d112.6565137740516!3d-7.988258279661414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6286ca0244799%3A0x6334547285a73e6!2sSD%20Kristen%20Brawijaya%203!5e0!3m2!1sid!2sid!4v1709255000000!5m2!1sid!2sid"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-info">
+            <p><strong>Alamat Yayasan:</strong> JL. Ki Ageng Gribig 248 Kedungkandang, Kota Malang</p>
+            <p><strong>Telepon:</strong> 085768654338 | <strong>Email:</strong> ypkjatim@gmail.com</p>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 | Yayasan Pendidikan Kristen Jatim</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const overlay = document.getElementById('nav-overlay');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        [overlay, navMenu].forEach(el => {
+            el.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        });
+    </script>
 </body>
+
 </html>
